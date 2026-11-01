@@ -1,0 +1,23 @@
+
+{
+  "laptops": [
+    {
+      "id": 1,
+      "name": "ASUS Vivobook",
+      "price": "12000000",
+      "image": "https://placehold.co/300x200?text=ASUS"
+    },
+    {
+      "id": 2,
+      "name": "Dell Inspiron",
+      "price": "15000000",
+      "image": "https://placehold.co/300x200?text=Dell"
+    },
+    {
+      "id": 3,
+      "name": "HP Pavilion",
+      "price": "13000000",
+      "image": "https://placehold.co/300x200?text=HP"
+    }
+  ]
+}

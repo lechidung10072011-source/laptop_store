@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Sản Phẩm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://jsdelivr.net" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow-sm border-0 p-4">
+                    <div class="text-center bg-white p-3 rounded">
+                        <img id="laptop-img" src="" class="img-fluid" alt="" style="max-height: 250px; object-fit: contain;" onerror="this.onerror=null; this.src='https://placehold.co';">
+                    </div>
+                    <div class="card-body px-0 pt-4">
+                        <h3 id="laptop-name" class="fw-bold text-dark">Tên máy laptop</h3>
+                        <h4 id="laptop-price" class="text-danger fw-semibold my-3">$0</h4>
+                        
+                        <div class="p-3 bg-white border rounded my-3">
+                            <h6 class="fw-bold text-secondary mb-2">Thông số kỹ thuật:</h6>
+                            <p id="laptop-specs" class="text-dark mb-0">Chưa có thông số</p>
+                        </div>
+
+                        <p class="text-muted small">Mã định danh: <span id="laptop-id" class="badge bg-secondary">0</span></p>
+                        
+                        <div class="d-grid gap-2 mt-4">
+                            <button class="btn btn-primary btn-lg">Mua ngay</button>
+                            <a href="index.html" class="btn btn-outline-secondary">Quay lại danh sách</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <script src="/js/detail.js"></script>
+
+</body>
+</html>

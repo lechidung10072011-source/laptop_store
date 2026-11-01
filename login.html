@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng Nhập / Đăng Ký</title>
+    <style>
+    
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background: linear-gradient(135deg, #71b7e6, #9b59b6);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+      }
+
+    
+      .auth-container {
+        background: #ffffff;
+        max-width: 400px;
+        width: 100%;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+     
+      .auth-tabs {
+        display: flex;
+        margin-bottom: 25px;
+        border-bottom: 2px solid #f0f0f0;
+      }
+
+      .tab-trigger {
+        flex: 1;
+        padding: 12px;
+        text-align: center;
+        background: none;
+        border: none;
+        font-size: 16px;
+        font-weight: 600;
+        color: #888;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .tab-trigger.active {
+        color: #9b59b6;
+        border-bottom: 3px solid #9b59b6;
+      }
+
+      /* Các khối form */
+      .auth-panel {
+        display: none;
+      }
+
+      .auth-panel.active {
+        display: block;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 14px;
+        color: #333;
+        font-weight: 500;
+      }
+
+      .form-group input {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        outline: none;
+        transition: border 0.3s;
+      }
+
+      .form-group input:focus {
+        border-color: #9b59b6;
+      }
+
+      /* Khu vực tùy chọn thêm */
+      .form-options {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 13px;
+        margin-bottom: 20px;
+      }
+
+      .form-options a {
+        color: #9b59b6;
+        text-decoration: none;
+      }
+
+      .form-options a:hover {
+        text-decoration: underline;
+      }
+
+  
+      .btn-submit {
+        width: 100%;
+        padding: 12px;
+        background: linear-gradient(135deg, #71b7e6, #9b59b6);
+        border: none;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: opacity 0.2s;
+      }
+
+      .btn-submit:hover {
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="auth-container">
+      <div class="auth-tabs">
+        <h2>Đăng Nhập</h2>
+      </div>
+
+      <div id="panel-login" class="auth-panel active">
+        <form id="form-login">
+          <div class="form-group">
+            <label for="login-email">Tài khoản / Email</label>
+            <input
+              type="text"
+              id="login-email"
+              placeholder="Nhập email của bạn"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="login-password">Mật khẩu</label>
+            <input
+              type="password"
+              id="login-password"
+              placeholder="Nhập mật khẩu"
+              required
+            />
+          </div>
+          <div class="form-options">
+            <label
+              ><input type="checkbox" id="login-remember" /> Ghi nhớ tôi</label
+            >
+            <a href="#" id="link-forgot">Quên mật khẩu?</a>
+          </div>
+          <button type="submit" class="btn-submit">Đăng Nhập</button>
+        </form>
+      </div>
+
+      <div id="panel-register" class="auth-panel">
+        <form id="form-register">
+          <div class="form-group">
+            <label for="reg-name">Họ và tên</label>
+            <input
+              type="text"
+              id="reg-name"
+              placeholder="Nhập họ và tên"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="reg-email">Địa chỉ Email</label>
+            <input
+              type="email"
+              id="reg-email"
+              placeholder="Nhập email đăng ký"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="reg-password">Mật khẩu</label>
+            <input
+              type="password"
+              id="reg-password"
+              placeholder="Tạo mật khẩu mạnh"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="reg-confirm">Xác nhận mật khẩu</label>
+            <input
+              type="password"
+              id="reg-confirm"
+              placeholder="Nhập lại mật khẩu"
+              required
+            /> 
+          </div>
+          <button type="submit" class="btn-submit">Đăng Ký Tài Khoản</button>
+        </form>
+      </div>
+      <script src="../js/login.js"></script>
+    </div>
+  </body>
+</html>

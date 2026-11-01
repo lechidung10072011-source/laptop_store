@@ -1,0 +1,81 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+/* Thêm đoạn này vào file style.css của bạn để tạo nền tối cho Banner giúp nổi bật chữ trắng */
+.hero-section {
+  background-color: #212529 !important; /* Tạo nền tối màu */
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+}
+
+
+.drop-shadow {
+    color: #ffffff;
+    text-shadow: 
+        -2px -2px 0 #000,  
+         2px -2px 0 #000,
+        -2px  2px 0 #000,
+         2px  2px 0 #000,
+         3px  3px 8px rgba(0, 0, 0, 0.8);
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #0dcaf0;
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
+}
+
+.img-container {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.img-container img {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.product-card:hover .img-container img {
+    transform: scale(1.06);
+}
+
+.btn-cart {
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.btn-cart:hover {
+    background-color: #0dcaf0;
+    border-color: #0dcaf0;
+    color: #fff;
+}
+.drop-shadow{
+    color: #000;
+}
